@@ -1,0 +1,8 @@
+---
+run:
+  dir: exp
+sweep:
+  dir: exp
+  subdir: ${hydra.job.override_dirname}
+job:
+  chdir: True

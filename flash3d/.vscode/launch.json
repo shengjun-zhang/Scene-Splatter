@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "evaluate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "hydra.run.dir=exp/re10k_v2","hydra.job.chdir=true","+experiment=layered_re10k","+dataset.crop_border=true","dataset.test_split_path=splits/re10k_mine_filtered/test_files.txt","model.depth.version=v1","++eval.save_vis=True"
+            ]
+        },
+        {
+            "name": "Python_debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-d",
+                "data/RealEstate10K",
+                "-o",
+                "data/RealEstate10K",
+                "-m",
+                "test"
+            ]
+        }
+    ]
+}
