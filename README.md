@@ -19,7 +19,7 @@
 </h3>
 
 <p align="center">
-    <img src="assert/pipeline.png">
+    <img src="assert/SceneSplatter.png">
 </p>
 
 ## Installation
